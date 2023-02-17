@@ -2,7 +2,7 @@ const net = require("net");
 const readline = require("readline");
 const connect = function () {
   const conn = net.createConnection({
-    host: "165.227.47.243",
+    host: "localhost",
     port: 50541
   });
 
@@ -17,6 +17,9 @@ const connect = function () {
     console.log("connection made successfully");
 
     conn.write("Name: MLB");
+
+    //conn.write("Move: up");
+
     });
 
   return conn;
